@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07/07/2016 09:57:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="persistencia.Fornecedor" table="fornecedor" catalog="sorveteriabanco" optimistic-lock="version">
+        <id name="codigo" type="int">
+            <column name="codigo" />
+            <generator class="assigned" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" length="45" />
+        </property>
+        <property name="rg" type="java.lang.Integer">
+            <column name="rg" />
+        </property>
+        <property name="cpf" type="java.lang.Integer">
+            <column name="cpf" />
+        </property>
+        <property name="bairro" type="string">
+            <column name="bairro" length="45" />
+        </property>
+        <property name="rua" type="string">
+            <column name="rua" length="45" />
+        </property>
+        <property name="numero" type="java.lang.Integer">
+            <column name="numero" />
+        </property>
+        <property name="site" type="string">
+            <column name="site" length="45" />
+        </property>
+        <property name="cep" type="java.lang.Integer">
+            <column name="cep" />
+        </property>
+        <property name="cidade" type="string">
+            <column name="cidade" length="45" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="45" />
+        </property>
+        <property name="telefone" type="java.lang.Integer">
+            <column name="telefone" />
+        </property>
+        <property name="telefone2" type="java.lang.Integer">
+            <column name="telefone2" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

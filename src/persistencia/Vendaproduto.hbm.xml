@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07/07/2016 09:57:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="persistencia.Vendaproduto" table="vendaproduto" catalog="sorveteriabanco" optimistic-lock="version">
+        <id name="codigo" type="int">
+            <column name="codigo" />
+            <generator class="assigned" />
+        </id>
+        <property name="cliente" type="string">
+            <column name="cliente" length="45" />
+        </property>
+        <property name="data" type="java.lang.Float">
+            <column name="data" precision="12" scale="0" />
+        </property>
+        <property name="pagamento" type="java.lang.Float">
+            <column name="pagamento" precision="12" scale="0" />
+        </property>
+        <property name="total" type="java.lang.Float">
+            <column name="total" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

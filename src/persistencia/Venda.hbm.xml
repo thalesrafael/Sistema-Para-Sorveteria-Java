@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07/07/2016 09:57:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="persistencia.Venda" table="venda" catalog="sorveteriabanco" optimistic-lock="version">
+        <composite-id name="id" class="persistencia.VendaId">
+            <key-property name="codigovenda" type="int">
+                <column name="codigovenda" />
+            </key-property>
+            <key-property name="codigoproduto" type="int">
+                <column name="codigoproduto" />
+            </key-property>
+        </composite-id>
+        <property name="quantidade" type="java.lang.Integer">
+            <column name="quantidade" />
+        </property>
+        <property name="valorunitario" type="java.lang.Integer">
+            <column name="valorunitario" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07/07/2016 09:57:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="persistencia.Produto" table="produto" catalog="sorveteriabanco" optimistic-lock="version">
+        <id name="codigo" type="int">
+            <column name="codigo" />
+            <generator class="assigned" />
+        </id>
+        <property name="nomeproduto" type="string">
+            <column name="nomeproduto" length="45" />
+        </property>
+        <property name="preco" type="java.lang.Integer">
+            <column name="preco" />
+        </property>
+        <property name="descricaoproduto" type="string">
+            <column name="descricaoproduto" length="45" />
+        </property>
+        <property name="qtdmin" type="java.lang.Integer">
+            <column name="qtdmin" />
+        </property>
+        <property name="qtdmax" type="java.lang.Integer">
+            <column name="qtdmax" />
+        </property>
+        <property name="ativo" type="string">
+            <column name="ativo" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
